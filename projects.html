@@ -1,57 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | D'Jaine Brown</title>
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A growing collection of D'Jaine Brown's software, web development, and learning projects.">
+  <meta name="theme-color" content="#171516">
+  <title>Projects | D'Jaine Brown</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script>
+    try {
+      const saved = localStorage.getItem("portfolio-theme");
+      const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+      if (saved === "light" || (!saved && prefersLight)) document.documentElement.dataset.theme = "light";
+    } catch (_) {}
+  </script>
 </head>
 <body>
-    <header>
-        <h1>D'Jaine Brown</h1>
-        <p>Software Development Student &amp; Aspiring Software Developer</p>
-        <nav aria-label="Main navigation">
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html" aria-current="page">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="development.html">Professional Development</a>
-            <a href="resume.html">Resume</a>
-            <a href="creative.html">Creative</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="page-intro">
-            <p class="eyebrow">Selected work</p>
-            <h2>Projects that turn questions into working software.</h2>
-            <p>This collection will grow with class assignments, personal experiments, and collaborative builds. Each project will explain the problem, the process, and what I learned.</p>
-        </section>
-        <section class="project-grid" aria-label="Project portfolio">
-            <article class="project-card">
-                <p class="project-type">Web application</p>
-                <h3>Campus Connect</h3>
-                <p>A student resource hub for discovering campus events, organizations, and study groups.</p>
-                <p class="tag-list">HTML &bull; CSS &bull; JavaScript</p>
-                <a href="contact.html">Discuss the project</a>
-            </article>
-            <article class="project-card">
-                <p class="project-type">Data project</p>
-                <h3>Budget Lens</h3>
-                <p>A simple personal finance dashboard that makes spending patterns easier to understand.</p>
-                <p class="tag-list">Python &bull; Data visualization &bull; UX</p>
-                <a href="contact.html">Discuss the project</a>
-            </article>
-            <article class="project-card">
-                <p class="project-type">Portfolio build</p>
-                <h3>This Website</h3>
-                <p>A living portfolio for documenting my technical progress, creative work, and career goals.</p>
-                <p class="tag-list">HTML &bull; CSS &bull; Git</p>
-                <a href="development.html">Follow the process</a>
-            </article>
-        </section>
-    </main>
-    <footer><p>&copy; 2026 D'Jaine Brown</p></footer>
-    <script src="JS/script.js"></script>
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="index.html">D'Jaine Brown</a>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Use light theme</button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    </div>
+  </div>
+  <p class="header-tagline">Computer Science · Software Development · Creative Practice</p>
+  <nav class="primary-nav" id="primary-navigation" data-primary-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="skills-development.html">Skills & Development</a>
+    <a href="creative.html">Creative</a>
+    <a href="resume-contact.html">Resume & Contact</a>
+  </nav>
+</header>
+<main><section class="page-intro"><p class="eyebrow">Selected work</p><h1>Learning by making.</h1><p class="lead">This page will grow as I complete projects. I want each entry to explain the goal, the decisions behind the implementation, and what I learned—not just list a technology stack.</p></section>
+<section class="content-section card-grid"><article class="card"><p class="project-status">In progress</p><h3>Personal Portfolio</h3><p>A personal website for presenting my technical interests, documenting development, and bringing my creative work together in one place.</p><ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul><p class="muted">Current focus: page structure, responsive design, accessible navigation, and theme support.</p></article><article class="card"><p class="project-status">Planned</p><h3>Future project</h3><p>A space reserved for a project once its scope is defined and development begins. It will be added here with an accurate status and a clear description.</p></article><article class="card"><p class="project-status">Planned</p><h3>Future project</h3><p>A second space for future work. Completed projects will include source code or a live demonstration whenever possible.</p></article></section>
+</main>
+<footer class="site-footer"><span>© <span data-current-year>2026</span> D'Jaine Brown</span><span>Designed with intention. Built in progress.</span></footer><script src="JS/script.js"></script>
 </body>
 </html>
