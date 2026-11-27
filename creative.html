@@ -1,39 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative | D'Jaine Brown</title>
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photography, cinematography, and music by D'Jaine Brown.">
+  <meta name="theme-color" content="#171516">
+  <title>Creative | D'Jaine Brown</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script>
+    try {
+      const saved = localStorage.getItem("portfolio-theme");
+      const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+      if (saved === "light" || (!saved && prefersLight)) document.documentElement.dataset.theme = "light";
+    } catch (_) {}
+  </script>
 </head>
 <body>
-    <header>
-        <h1>D'Jaine Brown</h1>
-        <p>Software Development Student &amp; Aspiring Software Developer</p>
-        <nav aria-label="Main navigation">
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="development.html">Professional Development</a>
-            <a href="resume.html">Resume</a>
-            <a href="creative.html" aria-current="page">Creative</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="page-intro">
-            <p class="eyebrow">Creative work</p>
-            <h2>Making room for the work that happens beyond code.</h2>
-            <p>Creative practice helps me pay attention to composition, pacing, atmosphere, and story. This space will collect selected work and experiments.</p>
-        </section>
-        <section class="creative-grid">
-            <article><span class="creative-number">01</span><h3>Photography</h3><p>Portraits, places, and small details that reward a closer look.</p><a href="contact.html">View photography</a></article>
-            <article><span class="creative-number">02</span><h3>Cinematography</h3><p>Visual storytelling through framing, movement, light, and intentional editing.</p><a href="contact.html">View cinematography</a></article>
-            <article><span class="creative-number">03</span><h3>Music</h3><p>Listening, writing, and experimenting with sound as another way to shape emotion.</p><a href="contact.html">Explore music</a></article>
-        </section>
-    </main>
-    <footer><p>&copy; 2026 D'Jaine Brown</p></footer>
-    <script src="JS/script.js"></script>
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="index.html">D'Jaine Brown</a>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Use light theme</button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    </div>
+  </div>
+  <p class="header-tagline">Computer Science · Software Development · Creative Practice</p>
+  <nav class="primary-nav" id="primary-navigation" data-primary-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills-development.html">Skills & Development</a>
+    <a href="creative.html" aria-current="page">Creative</a>
+    <a href="resume-contact.html">Resume & Contact</a>
+  </nav>
+</header>
+<main><section class="page-intro creative-intro"><p class="eyebrow">Outside the code</p><h1>Another way of seeing things.</h1><p class="lead">Photography, filmmaking, and music give me different ways to explore composition, atmosphere, rhythm, and emotion. This section will be more visual and expressive while staying part of the same portfolio.</p></section>
+<section class="content-section card-grid"><article class="card creative-feature"><div><p class="card-kicker">01 / Still image</p><h2>Photography</h2><p>Observing light, framing, color, and the details that can be easy to overlook.</p></div><span class="muted">Selected photographs will be added as a curated gallery.</span></article><article class="card creative-feature"><div><p class="card-kicker">02 / Moving image</p><h2>Cinematography</h2><p>Visual storytelling through shot design, camera movement, lighting, and editing.</p></div><span class="muted">Film studies and completed work will be presented with context.</span></article><article class="card creative-feature"><div><p class="card-kicker">03 / Sound</p><h2>Music</h2><p>Learning guitar, piano, and music production as ways to shape ideas and feeling.</p></div><span class="muted">Original experiments and progress notes will appear here over time.</span></article></section>
+</main>
+<footer class="site-footer"><span>© <span data-current-year>2026</span> D'Jaine Brown</span><span>Designed with intention. Built in progress.</span></footer><script src="JS/script.js"></script>
 </body>
 </html>
