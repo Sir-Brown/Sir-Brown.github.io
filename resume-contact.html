@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume information and professional contact links for D'Jaine Brown.">
+  <meta name="theme-color" content="#171516">
+  <title>Resume & Contact | D'Jaine Brown</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script>
+    try {
+      const saved = localStorage.getItem("portfolio-theme");
+      const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+      if (saved === "light" || (!saved && prefersLight)) document.documentElement.dataset.theme = "light";
+    } catch (_) {}
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="index.html">D'Jaine Brown</a>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Use light theme</button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    </div>
+  </div>
+  <p class="header-tagline">Computer Science · Software Development · Creative Practice</p>
+  <nav class="primary-nav" id="primary-navigation" data-primary-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills-development.html">Skills & Development</a>
+    <a href="creative.html">Creative</a>
+    <a href="resume-contact.html" aria-current="page">Resume & Contact</a>
+  </nav>
+</header>
+<main><section class="page-intro"><p class="eyebrow">Resume &amp; contact</p><h1>Let’s connect.</h1><p class="lead">I’m interested in opportunities to learn, contribute, and grow in software development and related technical fields.</p></section>
+<section class="content-section card-grid"><article class="card"><p class="card-kicker">Resume</p><h2>Experience &amp; education</h2><p class="muted">My resume is being prepared for publication. I’ll add a downloadable PDF here once the document is finalized and checked for accuracy.</p></article><article class="card"><p class="card-kicker">Email</p><h2>Get in touch</h2><p class="muted">For professional opportunities, collaboration, or questions, email is the best place to start.</p><p class="muted">A public email address will be added when I’m ready to publish it.</p></article><article class="card"><p class="card-kicker">GitHub</p><h2>Code &amp; projects</h2><p class="muted">Explore my repositories and follow the development of this portfolio.</p><a href="https://github.com/Sir-Brown" target="_blank" rel="noopener noreferrer">github.com/Sir-Brown ↗</a></article></section>
+</main>
+<footer class="site-footer"><span>© <span data-current-year>2026</span> D'Jaine Brown</span><span>Designed with intention. Built in progress.</span></footer><script src="JS/script.js"></script>
+</body>
+</html>
