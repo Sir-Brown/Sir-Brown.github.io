@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Technical skills, tools, and current professional development goals for D'Jaine Brown.">
+  <meta name="theme-color" content="#171516">
+  <title>Skills & Development | D'Jaine Brown</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script>
+    try {
+      const saved = localStorage.getItem("portfolio-theme");
+      const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+      if (saved === "light" || (!saved && prefersLight)) document.documentElement.dataset.theme = "light";
+    } catch (_) {}
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="index.html">D'Jaine Brown</a>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Use light theme</button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    </div>
+  </div>
+  <p class="header-tagline">Computer Science · Software Development · Creative Practice</p>
+  <nav class="primary-nav" id="primary-navigation" data-primary-nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills-development.html" aria-current="page">Skills & Development</a>
+    <a href="creative.html">Creative</a>
+    <a href="resume-contact.html">Resume & Contact</a>
+  </nav>
+</header>
+<main><section class="page-intro"><p class="eyebrow">Toolkit &amp; direction</p><h1>Skills are built through practice.</h1><p class="lead">A snapshot of the technologies I’ve studied and the areas I’m actively developing. Coursework exposure and independent practice are not the same as professional experience, and I aim to represent both accurately.</p></section>
+<section class="content-section"><div class="section-heading"><p class="eyebrow">Technical foundations</p><h2>Languages &amp; tools</h2></div><div class="card-grid"><article class="card"><h3>Programming languages</h3><p class="muted">Coursework and practice</p><ul><li>C and C++</li><li>C#</li><li>Java</li><li>JavaScript</li><li>Python</li><li>SQL</li></ul></article><article class="card"><h3>Web technologies</h3><p class="muted">Independent practice and coursework</p><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive web design</li></ul></article><article class="card"><h3>Development practices</h3><p class="muted">Continuing to strengthen</p><ul><li>Git and GitHub</li><li>Debugging and problem solving</li><li>Data structures and algorithms</li><li>Documentation and maintainability</li></ul></article></div></section>
+<section class="content-section"><div class="section-heading"><p class="eyebrow">Learning roadmap</p><h2>What I’m strengthening next.</h2></div><div class="timeline"><article class="timeline-item"><span class="timeline-number">01</span><div><h3>Core software engineering</h3><p class="muted">Build confidence with data structures, algorithms, object-oriented design, testing, and maintainable code.</p></div></article><article class="timeline-item"><span class="timeline-number">02</span><div><h3>End-to-end web development</h3><p class="muted">Practice connecting frontends with APIs, backend services, and databases through complete, documented projects.</p></div></article><article class="timeline-item"><span class="timeline-number">03</span><div><h3>Cybersecurity, AI, and automation</h3><p class="muted">Develop practical understanding of secure development, useful AI workflows, and automation that improves efficiency.</p></div></article><article class="timeline-item"><span class="timeline-number">04</span><div><h3>Professional readiness</h3><p class="muted">Keep improving my portfolio, technical communication, collaboration habits, and preparation for entry-level opportunities.</p></div></article></div></section>
+</main>
+<footer class="site-footer"><span>© <span data-current-year>2026</span> D'Jaine Brown</span><span>Designed with intention. Built in progress.</span></footer><script src="JS/script.js"></script>
+</body>
+</html>
